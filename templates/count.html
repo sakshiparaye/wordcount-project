@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+</head>
+<body>
+    <h1>There are {{count}} words in your text</h1>
+    <h1>Your text: </h1>
+    <h3>{{ fulltext }}</h3>
+    <h1>Count of words: </h1>
+    {% comment %} {{wordDictionary}} {% endcomment %}
+    {% for word, counttototal in sortedWords %}
+    {{word}}: {{counttototal}}
+    <br>
+    {% endfor %}
+</body>
+</html>
